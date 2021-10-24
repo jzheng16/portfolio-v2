@@ -1,0 +1,136 @@
+@import '../../palette.scss';
+
+.about {
+  //height: calc(100vh - 50px);
+  background-color: $color1;
+  color: $color3;
+  box-sizing: border-box;
+}
+
+.about-body {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+  } 
+}
+
+.intro {
+  width: 70%;
+  margin: 0 auto;
+   @media screen and (max-width: 500px) {
+    width: 85%;
+  } 
+}
+.stack-title {
+  margin-bottom: 1em;
+   @media screen and (max-width: 500px) {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  } 
+}
+
+.about-stack {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 1em;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   
+  } 
+  
+}
+
+.ul-about {
+  width: 100%;
+  text-align: center;
+
+  div {
+    // display: inline-block;
+    margin: 0em 1em 1em 1em;
+    width: 30%;
+    color: $color3;
+    margin: 0 auto;
+    background-color: #000000;
+    @media screen and (max-width: 768px) {
+      font-size: 12em;
+   
+  } 
+};
+}
+
+.react-logo {
+  display: block;
+  margin: 0 auto;
+  animation: spin infinite 20s linear;
+  width: 5em;
+  height: 5em;
+  @keyframes spin {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg); 
+  } 
+}
+
+@media screen and (max-width: 768px) {
+    height: 4em;
+    width: 4em;
+   
+  } 
+
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: 5em;
+  width: 5em;
+  @media screen and (max-width: 768px) {
+    height: 4em;
+    width: 4em;
+   
+  } 
+}
+
+.png-logo {
+  display: block;
+  margin: 0 auto;
+  height: 4em;
+  width: 4em;
+  @media screen and (max-width: 768px) {
+    height: 3em;
+    width: 3em;
+   
+  } 
+
+}
+
+#react {
+  text-decoration: none;
+  color: $color6;
+}
+
+.fa-database {
+  display: block;
+  font-size: 4em;
+  color: #f9f9f9;
+  padding-bottom: .2em;
+  @media screen and (max-width: 768px) {
+    font-size: 3em;
+   
+  } 
+}
+

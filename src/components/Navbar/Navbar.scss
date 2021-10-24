@@ -1,0 +1,140 @@
+@import '../../palette.scss';
+
+.container-nav {
+  background-color: black;
+  display: flex;
+  height: 50px;
+  justify-content: center;;
+  align-items: center;
+  z-index: 3;
+  transition: var(--transition);
+  // position: sticky;
+  // top: 0;
+  &.fixed {
+    box-shadow: 0 10px 30px -10px gray;
+    position: fixed;
+    top: 0px;
+  }
+
+
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 4.8rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+
+  a:hover, a:active {
+    color: $color6;
+    //background-color: $color6;
+  }
+
+  li:first-child {
+   float: left;
+    
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute !important;
+  top: 10px!important; 
+  left: 10px!important ;
+  width: 1.6rem !important;
+  height: 1.6rem!important;
+ 
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white !important;
+  opacity: 1 !important;
+  height: 27% !important;
+
+}
+
+.bm-burger-bars:nth-child(1) {
+  top: 10% !important;
+}
+.bm-burger-bars:nth-child(2) {
+  top: 60% !important;
+}
+.bm-burger-bars:nth-child(3) {
+  top: 110% !important;
+}
+
+// /* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.bm-cross {
+  background: $color3 !important;
+  right: 16px !important;
+  top: 16px !important;
+  &:nth-child(1) {
+    transform: rotate(45deg) scale(1.5) !important; 
+  }
+  &:nth-child(2) {
+    transform: rotate(-45deg) scale(1.5) !important; 
+    
+  }
+}
+
+// /* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 4rem 2.4rem;
+  font-size: 1.8rem;
+ }
+
+// /* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 1.2rem;
+}
+
+/* Individual item */
+.bm-item {
+  display: block;
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+}
+
+
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+.bm-menu-wrap {
+  position: absolute !important;
+  top: 0;
+  left: -30px;
+  bottom: 0;
+  height: 100vh !important;
+  width: 70% !important;
+  margin-top: 4.8rem;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+@import "../../palette.scss";
+
+.contact {
+  padding-bottom: 80px;
+}
+
+.submitted {
+  color: $color3;
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 600px;
+  margin-top: 1.6rem;
+  height: auto;
+  // @media screen and (max-width: 600px) {
+  //   width: 60%;
+
+  // }
+  //  @media screen and (min-width: 1000px) {
+  //   width: 40%;
+
+  // }
+  font-size: 1.6rem;
+  input {
+    width: 100%;
+    display: block;
+    border: 1px solid $color2;
+    padding: 10px;
+    margin-bottom: 3px;
+  }
+
+  textarea {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border: 1px solid $color3;
+  }
+
+  button {
+    display: block;
+    margin-top: 0.8rem;
+    margin-bottom: 1.6rem;
+    float: right;
+    border: 1px solid $color3;
+    background-color: transparent;
+    color: $color3;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: $color6;
+    border: 1px solid $color6;
+  }
+}
