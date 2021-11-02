@@ -1,0 +1,114 @@
+@import "../../palette.scss";
+
+.blog_container {
+  background: #191b1f;
+}
+
+.tutoring_main_content {
+  background: #191b1f;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  background: #191b1f;
+}
+
+.blog_content {
+}
+
+.blog_header {
+  max-width: 1040px;
+  box-sizing: border-box;
+  padding: 70px 170px 50px 170px;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    padding: 70px 70px 50px 70px;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 70px 25px 50px 25px;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+    color: $color3;
+    margin: 0 0 3.6rem 0;
+  }
+
+  p {
+    color: #92a3ab;
+  }
+
+  .description {
+    color: #92a3ab;
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #2b2f36;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+  }
+  .blog_info {
+    margin-left: 12px;
+    font-size: 12px;
+    p {
+      margin: 0;
+    }
+    p:first-child {
+      margin-bottom: 6px;
+    }
+
+    .dot {
+      display: inline-block;
+      margin: 0 4px;
+      opacity: 0.6;
+    }
+  }
+}
+
+.post_content {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+
+  figure {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 25px 0 50px;
+    background: #e3e9ed;
+    border-radius: 3px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: cover;
+    }
+    figcaption {
+      background: transparent;
+      text-align: left;
+      width: 100%;
+      background: #191b1f;
+      padding-top: 5px;
+    }
+  }
+
+  .content_block {
+    padding: 0px 50px;
+    font-size: 18px;
+
+    h3 {
+      font-size: 2.8rem;
+      margin-top: 3.6rem;
+      // margin-bottom: 2.8rem;
+    }
+    p {
+      line-height: 2.2rem;
+    }
+  }
+}

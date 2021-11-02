@@ -3,6 +3,8 @@ import AOS from 'aos';
 import './App.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from '../../Routes';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 AOS.init({
   // Global settings
@@ -23,8 +25,10 @@ AOS.init({
 
 export default () => (
   <div className="App">
+    <Navbar />
     <Router>
       <Routes />
     </Router>
+    <Footer />
   </div>
 );

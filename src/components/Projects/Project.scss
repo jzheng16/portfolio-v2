@@ -2,6 +2,10 @@
 
 .projects {
   background-color: $color7;
+  .main-content {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2b2f36;
+  }
 }
 
 .gallery {

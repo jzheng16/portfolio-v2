@@ -6,6 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 import Home from './components/Home/Home';
+import Tutoring from './components/Blogs/Tutoring/Tutoring';
 // import Blog from './components/Blog/Blog';
 
 export default function Routes() {
@@ -13,6 +14,9 @@ export default function Routes() {
     <Switch>
       <Route exact path="/">
         <Home />
+      </Route>
+      <Route exact path="/blog/tutoring">
+        <Tutoring />
       </Route>
       {/* <Route exact path="/blog">
         <Blog />

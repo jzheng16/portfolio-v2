@@ -1,7 +1,8 @@
 @import "../../palette.scss";
 
 .contact {
-  padding-bottom: 80px;
+  background-color: $color7;
+  
 }
 
 .submitted {
@@ -14,6 +15,8 @@
   max-width: 600px;
   margin-top: 1.6rem;
   height: auto;
+  padding-bottom: 40px;
+  // border-bottom: 1px solid #2b2f36;
   // @media screen and (max-width: 600px) {
   //   width: 60%;
 
@@ -42,7 +45,7 @@
     display: block;
     margin-top: 0.8rem;
     margin-bottom: 1.6rem;
-    float: right;
+    margin-left: auto;
     border: 1px solid $color3;
     background-color: transparent;
     color: $color3;

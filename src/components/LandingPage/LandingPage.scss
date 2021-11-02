@@ -1,8 +1,7 @@
-@import '../../palette.scss';
+@import "../../palette.scss";
 
 .home {
   background: black;
-  padding: 20px 25px 25px 40px;
 }
 
 .portrait {
@@ -11,7 +10,7 @@
   border-radius: 50%;
   border: 1px solid white;
   margin: 0 auto;
-  background-image: url('../../images/portrait3.jpg');
+  background-image: url("../../images/portrait3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,21 +20,22 @@
 .home-main-content {
   color: white;
   text-align: center;
+  padding: 3.5vw 2vw 3.5vw 2vw;
 
-  h2{
+  h2 {
     font-size: 5rem;
     margin: 0 0 8px 0;
-    font-weight: bold;  
-     @media screen and (max-width: 768px) {
+    font-weight: bold;
+    @media screen and (max-width: 768px) {
       font-size: 3.2rem;
-    } 
+    }
   }
 
   h3 {
     margin: 0 0 24px 0;
     font-size: 2.2rem;
     font-weight: 300;
-    opacity: .8;
+    opacity: 0.8;
   }
 
   .about-description {
@@ -48,37 +48,38 @@
 
   a {
     color: #26a8ed;
-    transition: all .3s;
+    transition: all 0.3s;
     &:hover {
-      color: #0A95FF;
+      color: #0a95ff;
     }
   }
-
 }
 
-header:hover::after{
+header:hover::after {
   filter: blur(0px);
 }
 
 .header-title {
   color: $color3;
   font-size: 1.1em;
-  margin-bottom: 2em; 
-
+  margin-bottom: 2em;
 }
 
 .button-link {
   background-color: transparent;
   border: 1px solid #fff;
   padding: 10px;
- 
+
   &:hover {
-    background-color:#04C2C9;
-  cursor: pointer;
+    background-color: #04c2c9;
+    cursor: pointer;
   }
 }
 
-.navigate-to-about, .navigate-to-about:visited, .navigate-to-about:hover, .navigate-to-about:active {
+.navigate-to-about,
+.navigate-to-about:visited,
+.navigate-to-about:hover,
+.navigate-to-about:active {
   display: block;
   width: 60%;
   margin: 0 auto;
@@ -89,22 +90,12 @@ header:hover::after{
 // .button-link:hover .fa-arrow-right:before {
 //   content: "\f063";
 // }
-.button-link:hover .fa-arrow-right{
-  
+.button-link:hover .fa-arrow-right {
   transition: 0.9s;
   transform: rotate(90deg);
 }
 .fa-arrow-right {
   transition: 0.9s;
-  margin-left: .5em;
-  font-size: .8em;
+  margin-left: 0.5em;
+  font-size: 0.8em;
 }
-
-
-
-
-
-
-
-
-

@@ -2,11 +2,11 @@ import React from 'react';
 import './LandingPage.scss';
 
 export default () => (
-  <section id="home" className="section">
+  <section id="home" className="section home">
     <div className="main-content home-main-content">
       <div className="portrait"></div>
       <h2>Hi, I&apos;m Joey</h2>
-      <h3>I am a software engineer currently working at RIA In a Box</h3>
+      <h3>I am a software engineer currently working at <a href="https://gandgwebstore.com" target="_blank" rel="noopener noreferrer">RIA In a Box</a></h3>
       <div className="about-description">
         <p>
           <span>I also maintain </span>
@@ -15,12 +15,5 @@ export default () => (
         </p>
       </div>
     </div>
-    {/* <a className="navigate-to-about" href="#about">
-          <div className="button-link">
-            View my work
-            <i className="fa fa-arrow-right"></i>
-          </div>
-        </a> */}
-
   </section>
 );

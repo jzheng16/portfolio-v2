@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import LandingPage from '../LandingPage/LandingPage';
-import About from '../About/About';
+import Blog from '../Blog/Blog';
 import Projects from '../Projects/Project';
 import Contact from '../Contact/Contact';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
 
 const Home = () => (
-  <div>
-    <Navbar />
+  <main className="home_main_content">
     <LandingPage />
-    {/* <About /> */}
+    <Blog />
     <Projects />
     <Contact />
-    <Footer />
-  </div>
+  </main>
 
 );
 
