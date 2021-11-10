@@ -31,9 +31,14 @@
 
     .homepage_blog_info_section {
       text-decoration: none;
-      h1 {
+
+      h2 {
+        margin: .8em 0 0.4em 0;
+        line-height: 1.15em;
+        transition: color 0.2s ease-in-out;
         font-size: 2.2rem;
         color: $color3;
+        min-height: 50px;
       }
 
       p {
@@ -103,7 +108,7 @@
       max-height: 350px;
     }
     .homepage_blog_info_section {
-      h1 {
+      h2 {
         font-size: 3.2rem;
       }
       .description {

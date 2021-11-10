@@ -1,6 +1,7 @@
 import React from 'react';
 import AOS from 'aos';
 import './App.scss';
+import 'aos/dist/aos.css';
 import Routes from '../../Routes';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';

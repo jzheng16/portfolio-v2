@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Roboto);
-
+@import './palette.scss';
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -32,7 +32,10 @@ a {
 }
 
 blockquote {
-  margin: 0 0 1.5em;
+  margin: 2.8rem 0 2.8rem 0;
+  @media screen and (min-width:501px) {
+    margin: 4rem 0 4rem 0;
+  }
   padding: 0 1.5em;
   border-left: 3px solid #3eb0ef;
   p:first-child {
@@ -60,6 +63,20 @@ blockquote {
       justify-content: space-between;
       align-items: center;
     }
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+
+h1 {
+  font-size: 3.2rem;
+  color: $color3;
+  margin: 0 0 3.6rem 0;
+  @media screen and (min-width: 501px) {
+    font-size: 5.5rem;
   }
 }
 

@@ -3,7 +3,7 @@ import Avatar from '../Avatar';
 
 const BlogInfo = ({ title, description, duration, published_on }) => (
   <section className="blog_section">
-    <h1>{title}</h1>
+    <h2>{title}</h2>
     <p className="description">{description}</p>
     <div className="separator"></div>
     <section className="info">

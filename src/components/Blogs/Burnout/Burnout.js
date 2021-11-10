@@ -1,35 +1,32 @@
 import '../main.scss';
-import './Tutoring.scss';
 import BlogInfo from '../BlogInfo';
-import China from '../../../images/china.jpg';
+import Hiking from '../../../images/hiking.jpg';
 
-const Tutoring = () => {
+const Burnout = () => {
   const x = 1;
   return (
     <div className="blog_container">
       <header className="blog_header">
-        <BlogInfo title="My Unexpected Role as a Mentor and Tutor" description="How being a coding tutor became a huge turning point in my life and career." published_on="31 October 2021" duration="5" />
+        <BlogInfo title="Work and Burnout" description="Balancing work, fitness, and mental health amidst the pandemic." published_on="11 November 2021" duration="10" />
       </header>
       <main className="tutoring_main_content">
 
         <section className="post_content">
           <figure>
-            <img src={China} alt="Chinese architecture" />
-            <figcaption>Hong Kong 2017.</figcaption>
+            <img src={Hiking} alt="View of Hudson River" style={{ objectPosition: '0px -270px' }} />
+            <figcaption>Bear Mountain Park 2021</figcaption>
           </figure>
           <section className="content_block">
 
             <h2>Background</h2>
-            <p><span className="emphasis">June 25th, 2018</span> marked 9 months since I&apos;ve been in China working as an analyst for an investment management company. If you had told me that a year after graduating college that I would be working in China in a field only faintly related to my degree, I probably wouldn&apos;t question it to be honest.</p>
-            <p>China was a great time. I had improved my Chinese tremendously and made some great friends. However, I just couldn&apos;t see a future there. There were too many barriers both socially and financially that I knew I couldn&apos;t overcome, no matter how hard I tried.</p>
-            <p>I knew I had to eventually move back and truly start my career as a software engineer. So that&apos;s what I did.</p>
-            <p>Knowing that my time in China was limited, I began relearning all the stuff I had learned in the bootcamp I attended before I left for China. Things like <a href="#hi" target="_blank" rel="noopener noreferrer">React</a>, <a href="#hi" target="_blank" rel="noopener noreferrer">Redux</a>, and <a href="#hi" target="_blank" rel="noopener noreferrer">Node.js</a> were slowly coming back to me. I spent nearly 3 months self-learning before eventually moving back to my home in NYC.</p>
+            <p>The <span className="emphasis">pandemic</span> has had a tremendous effect on everyone in this world. Everyone has been affected by it in one way or another.</p>
+            <p>My experience to summarize has been one with a lot of mixed feelings.</p>
 
-            <h2>Back Home</h2>
-            <p>I was finally back home. However, I still didn&apos;t feel like I was ready to start looking for a job.</p>
-            <p>Maybe it was imposter syndrome. Maybe it was just a lack of confidence in not knowing exactly how much I needed to know. Whatever it was, it prevented me from job search.</p>
-            <p>So I continued studying hoping to eventually overcome this feeling of not being ready.</p>
-            <p>After some period of time, I did gain some confidence. Can I say I was job ready? Probably not. But I couldn&apos;t sit around any longer.</p>
+            <h2>Beginning</h2>
+            <p>In <span className="emphasis">March of 2020</span>, I was told by my company that we would be issued laptops and begin working from home until further notice. It felt surreal. I didn&apos;t expect to be working from home so suddenly.</p>
+            <p>Perhaps the biggest effect this pandemic has had on me was the work from home <span className="emphasis">(WFH)</span> situation.</p>
+            <p>It was amazing. My commute to the office ranged anywhere from 2-3 hours roundtrip. It wasn&apos;t pleasant to say the least. The amount of time saved from commuting has paid for itself 10x over. I got more sleep and I was able to get more out of the day.</p>
+            <p>Of course, there are cons as well.</p>
             <p>The one problem? I just didn&apos;t have much real-world experience. Who would want to hire someone with no actual coding experience in the web development field? I had tot think of a way to gain that experience.</p>
             <p>Brainstorming ideas, I happened to stumble on a tutoring site called <a href="https://www.wyzant.com" target="_blank" rel="noopener noreferrer">Wyzant</a>. It was a site that allowed anyone to tutor students in a wide array of subjects such as programming as long as you passed a series of exams.</p>
             <p>Why did this site catch my eye? Well I believe it&apos;s because being a mentor has always been a core value in my life. Throughout my entire life, I have been in numerous mentorship positions including volunteering at local elementary schools, providing tutoring to fellow classmates during my lunchtimes in high school, and being a TA in college.</p>
@@ -59,4 +56,4 @@ const Tutoring = () => {
   );
 };
 
-export default Tutoring;
+export default Burnout;

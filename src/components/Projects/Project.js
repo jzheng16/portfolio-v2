@@ -78,7 +78,7 @@ const Projects = () => {
     <section id="projects" className="projects section">
       <div className="main-content">
         <h1
-          data-aos="fade-left"
+          data-aos="fade-in"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
@@ -105,10 +105,9 @@ const Projects = () => {
 
           <div
             className="card"
-            data-aos="slide-left"
+            data-aos="fade-in"
             data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="100"
           >
             <div className="title">
               {gg.title}
@@ -119,10 +118,9 @@ const Projects = () => {
           </div>
           <div
             className="card"
-            data-aos="slide-up"
+            data-aos="fade-in"
             data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="200"
           >
             <div className="title">
               REACTO deFacto
@@ -134,10 +132,9 @@ const Projects = () => {
           </div>
           <div
             className="card"
-            data-aos="slide-left"
+            data-aos="fade-in"
             data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-delay="300"
           >
             <div className="title">
               MyFitnessPal Clone
