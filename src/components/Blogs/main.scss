@@ -101,14 +101,24 @@
   .content_block {
     padding: 0px 50px;
     font-size: 18px;
+    @media screen and (min-width: 768px) {
+      padding: 0px 100px;
+    }
 
-    h3 {
+
+    h2 {
       font-size: 2.8rem;
       margin-top: 3.6rem;
+      color: white;
       // margin-bottom: 2.8rem;
     }
     p {
-      line-height: 2.2rem;
+      line-height: 1.6em;
+      font-size: 18px;
+      margin: 0 0 1.5em 0;
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
     }
   }
 }

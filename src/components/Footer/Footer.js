@@ -19,8 +19,13 @@ export default () => {
             </a>
           </li>
           <li>
+            <a href="https://gandgwebstore.com" target="_blank" rel="noopener noreferrer">
+              G&G Webstore
+            </a>
+          </li>
+          <li>
             <a href="https://stackoverflow.com/users/7712898/jxzheng16" target="_blank" rel="noopener noreferrer">
-              Stack Overflow
+              Testimonials
             </a>
           </li>
         </ul>

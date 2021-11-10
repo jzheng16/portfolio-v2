@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Navbar.scss';
 import Menu from 'react-burger-menu/lib/menus/slide';
+import { Link } from 'react-router-dom';
 import resume from '../../images/Zheng_Joey_Resume.pdf';
 
 export default class NavbarContainer extends Component {
@@ -38,9 +39,9 @@ export default class NavbarContainer extends Component {
               <Menu
                 isOpen={menuOpen}
               >
-                <a onClick={this.closeMenu} href="#top"><i className="fas fa-home"></i>Home</a>
+                <Link to="/" onClick={this.closeMenu}><i className="fas fa-home"></i>Home</Link>
                 {/* <a onClick={this.closeMenu} href="/blog">Blog</a> */}
-                <a onClick={this.closeMenu} href="#blog">Blogs</a>
+                <Link to="/blog" onClick={this.closeMenu}>Blog</Link>
                 <a onClick={this.closeMenu} href="#projects">Projects</a>
                 <a onClick={this.closeMenu} href="#contact"><i className="fas fa-envelope"></i>Contact</a>
                 <a onClick={this.closeMenu} href={resume} target="_blank" rel="noopener noreferrer"><i className="far fa-file"></i>Resume</a>
@@ -52,10 +53,10 @@ export default class NavbarContainer extends Component {
               <ul className="nav-list sticky">
 
                 <li className="nav-item">
-                  <a href="#top">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 {/* <li className="nav-item"><a href="/blog">Blog</a></li> */}
-                <li className="nav-item"><a href="#blog">Blogs</a></li>
+                <li className="nav-item"><Link to="/blog">Blog</Link></li>
                 <li className="nav-item"><a href="#projects">Projects</a></li>
                 <li className="nav-item"><a href="#contact">Contact</a></li>
                 <li className="nav-item"><a href={resume} target="_blank" rel="noopener noreferrer">Resume</a></li>
