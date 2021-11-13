@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import '../main.scss';
 import BlogInfo from '../BlogInfo';
 import Hiking from '../../../images/hiking.jpg';
 
 const Burnout = () => {
-  const x = 1;
+  useEffect(() => {
+    document.title = 'Work and Burnout';
+  }, []);
+
   return (
     <div className="blog_container">
       <header className="blog_header">
@@ -13,7 +17,7 @@ const Burnout = () => {
 
         <section className="post_content">
           <figure>
-            <img src={Hiking} alt="View of Hudson River" style={{ objectPosition: '0px -270px' }} />
+            <img className="hudson_river_image" src={Hiking} alt="View of Hudson River" />
             <figcaption>Bear Mountain Park 2021</figcaption>
           </figure>
           <section className="content_block">

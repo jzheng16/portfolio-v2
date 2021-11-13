@@ -116,7 +116,7 @@
       // margin-bottom: 2.8rem;
     }
     p {
-      line-height: 1.6em;
+      line-height: 1.5em;
       font-size: 18px;
       margin: 0 0 1.5em 0;
       @media screen and (min-width: 768px) {
@@ -130,3 +130,14 @@
     }
   }
 }
+
+
+
+// Work and Burnout specific styling
+
+.hudson_river_image {
+  @media screen and (min-width:1200px) {
+    object-position: 0px -270px;
+  }
+}
+

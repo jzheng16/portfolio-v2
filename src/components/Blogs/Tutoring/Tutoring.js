@@ -1,10 +1,14 @@
+import { useEffect } from 'react';
 import '../main.scss';
 import './Tutoring.scss';
 import BlogInfo from '../BlogInfo';
 import China from '../../../images/china.jpg';
 
 const Tutoring = () => {
-  const x = 1;
+  useEffect(() => {
+    document.title = 'My Unexpected Role as a Mentor and Tutor';
+  }, []);
+
   return (
     <div className="blog_container">
       <header className="blog_header">
