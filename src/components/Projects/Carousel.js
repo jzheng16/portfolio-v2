@@ -45,13 +45,14 @@ class Carousel extends Component {
     const gallery = {
       MyFitnessClone: [pic1, pic2, pic3],
       QuizNOS: [pic1, pic2, pic5],
-      'REACTO Platform': [pic1, pic2, pic4],
+      TypeRacer: [pic1, pic2, pic4],
       'G&G Distributors': [pic6, pic7, pic8]
     };
     const {
       project: {
-        title, tag, details, github, link
-      }
+        title, tag, details, github, link, linkText
+      },
+      closeModal
     } = this.props;
     const { currentIndex } = this.state;
     return (
@@ -77,31 +78,6 @@ class Carousel extends Component {
             <img className="project-image" src={gallery[title][2]} alt="Project Slide 3" />
           </li>
         </ul>
-        <div className="about-project">
-          <div className="project-title">{title}</div>
-          <div className="tag">{tag}</div>
-          <div className="details">{details}</div>
-          {github
-            && (
-              <div className="github-link">
-                <a href={github} target="_blank" rel="noopener noreferrer">
-                  <i className="git-icon fab fa-github"></i>
-              &nbsp;View Github
-                </a>
-              </div>
-            )}
-          {
-            link && (
-              <div className="github-link">
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  <i className="git-icon fas fa-shopping-cart"></i>
-              &nbsp;Shop Now
-                </a>
-              </div>
-            )
-          }
-        </div>
-
         <ul className="carousel-indicators">
           <li>
             <button
@@ -138,6 +114,35 @@ class Carousel extends Component {
           </li>
 
         </ul>
+        <div className="about-project">
+          <div className="project-title">{title}</div>
+          <div className="tag">{tag}</div>
+          <div className="details">{details}</div>
+          <div className="links">
+            {github
+              && (
+                <div className="github-link">
+                  <a href={github} target="_blank" rel="noopener noreferrer">
+                    <i className="git-icon fab fa-github"></i>
+                    &nbsp;View Github
+                  </a>
+                </div>
+              )}
+            {
+              link && (
+                <div className="github-link">
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    {/* <i className="git-icon fas fa-shopping-cart"></i> */}
+                    {linkText}
+                  </a>
+                </div>
+              )
+            }
+          </div>
+          <button id="close-modal" type="button" onClick={closeModal}>
+            <i className="close-modal-button fas fa-times"></i>
+          </button>
+        </div>
 
         <button
           type="button"

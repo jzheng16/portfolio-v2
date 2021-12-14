@@ -16,7 +16,7 @@
   grid-column-gap: 1.6rem;
   margin: 0 auto;
   grid-column-gap: 1.6rem;
-  @media only screen and (min-width: 676px) {
+  @media only screen and (min-width: 1000px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -126,6 +126,7 @@
   outline: none;
 
   max-width: 700px;
+  max-height: 750px;
   height: 80vh;
   width: 100%;
   z-index: 99;
@@ -154,17 +155,6 @@
   opacity: 0;
 }
 
-#close-modal {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  margin: 0 !important;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: #ff6666;
-}
-
 .carousel-container {
   display: flex;
   flex-direction: column;
@@ -182,6 +172,3 @@
   flex-direction: column;
   justify-content: center;
 }
-
-
-

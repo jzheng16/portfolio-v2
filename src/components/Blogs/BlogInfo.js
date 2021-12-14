@@ -13,7 +13,6 @@ const BlogInfo = ({ title, description, duration, published_on }) => (
         <p>Published on {published_on} <span className="dot">•</span> {duration} Min Read</p>
       </div>
     </section>
-
   </section>
 );
 

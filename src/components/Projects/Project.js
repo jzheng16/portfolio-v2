@@ -8,6 +8,7 @@ import pic3 from '../../images/MFP1.png';
 import gg1 from '../../images/gg-1.jpg';
 import gg2 from '../../images/gg-2.jpg';
 import gg3 from '../../images/gg-3.jpg';
+import typist from '../../images/typist.JPG';
 import Carousel from './Carousel';
 
 Modal.setAppElement('#root');
@@ -20,11 +21,12 @@ const ProjectInfo = [
     github: 'https://github.com/jzheng16/quiz',
   },
   {
-    title: 'REACTO Platform',
-    tag: 'Whiteboard Interview GUI',
-    details: `A platform designed for Fullstack Academy's in house whiteboarding process. Instructors can assign interviewer / interviewee pairs, 
-    add new whiteboarding problems, and track attendance. Students can view past whiteboarding questions with answers and videos.`,
-    github: 'https://github.com/jmpressman/REACTO-platform',
+    title: 'TypeRacer',
+    tag: 'Test your typing skills',
+    details: 'Race against the clock while you improve your typing skills.',
+    github: 'https://github.com/jzheng16/typist',
+    link: 'https://typist-eta.vercel.app/',
+    linkText: 'Play'
   },
   {
     title: 'MyFitnessClone',
@@ -36,7 +38,8 @@ const ProjectInfo = [
     title: 'G&G Distributors',
     tag: 'E-Commerce Site',
     details: 'G&G Distributors offers a variety of products to shop for including silk flowers, glass vases, candles, and more for your special occasions.',
-    link: 'https://gandgwebstore.com'
+    link: 'https://gandgwebstore.com',
+    linkText: 'Shop Now'
   },
 ];
 
@@ -65,11 +68,8 @@ const Projects = () => {
         <div
           className="carousel-container"
         >
-          <Carousel project={ProjectInfo[currentProject]} />
+          <Carousel project={ProjectInfo[currentProject]} closeModal={closeModal} />
         </div>
-        <button id="close-modal" type="button" onClick={closeModal}>
-          <i className="close-modal-button fas fa-times"></i>
-        </button>
       </div>
     );
   };
@@ -123,12 +123,12 @@ const Projects = () => {
             data-aos-delay="200"
           >
             <div className="title">
-              REACTO deFacto
-              <span>Built with React/Redux</span>
+              TypeRacer
+              <span>Built with React</span>
             </div>
             <button className="learn_more" type="button" onClick={() => displayModal(1)}>Learn More</button>
 
-            <img className="project_picture" id="project2" src={pic2} alt="Project 2" />
+            <img className="project_picture" id="project2" src={typist} alt="Project 2" />
           </div>
           <div
             className="card"
