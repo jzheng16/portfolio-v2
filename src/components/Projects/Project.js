@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-
 import './Project.scss';
-import pic1 from '../../images/bg2.jpg';
-import pic2 from '../../images/Reacto.png';
 import pic3 from '../../images/MFP1.png';
-import gg1 from '../../images/gg-1.jpg';
-import gg2 from '../../images/gg-2.jpg';
-import gg3 from '../../images/gg-3.jpg';
-import typist from '../../images/typist.JPG';
+import ggBanner from '../../images/gg-banner.png';
+import typeracerBanner from '../../images/typeracer-banner.png';
 import Carousel from './Carousel';
 
 Modal.setAppElement('#root');
@@ -43,8 +38,6 @@ const ProjectInfo = [
   },
 ];
 
-const gg = ProjectInfo[3];
-
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
   const [currentProject, setCurrentProject] = useState(0);
@@ -65,9 +58,7 @@ const Projects = () => {
 
     return (
       <div>
-        <div
-          className="carousel-container"
-        >
+        <div className="carousel-container">
           <Carousel project={ProjectInfo[currentProject]} closeModal={closeModal} />
         </div>
       </div>
@@ -87,22 +78,6 @@ const Projects = () => {
           Projects
         </h1>
         <div className="gallery">
-          {/* <div
-            className="card"
-            data-aos="slide-right"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-          >
-            <div className="title">
-              No Project Yet
-              <span>Built with React/Redux</span>
-            </div>
-            <button className="learn_more" type="button" onClick={() => displayModal(0)}>Learn More</button>
-
-            <img className="project_picture" id="project1" src={pic1} alt="Project 1" />
-          </div> */}
-
           <div
             className="card"
             data-aos="fade-in"
@@ -110,11 +85,11 @@ const Projects = () => {
             data-aos-delay="100"
           >
             <div className="title">
-              {gg.title}
+              G&G Distributors
               <span>Built with PHP/CS-Cart</span>
             </div>
             <button className="learn_more" type="button" onClick={() => displayModal(3)}>Learn More</button>
-            <img className="project_picture" id="project4" src={gg1} alt="Project 4" />
+            <img className="project_picture" id="project4" src={ggBanner} alt="G&G Web Store" />
           </div>
           <div
             className="card"
@@ -127,8 +102,7 @@ const Projects = () => {
               <span>Built with React</span>
             </div>
             <button className="learn_more" type="button" onClick={() => displayModal(1)}>Learn More</button>
-
-            <img className="project_picture" id="project2" src={typist} alt="Project 2" />
+            <img className="project_picture" id="project2" src={typeracerBanner} alt="TypeRacer" />
           </div>
           <div
             className="card"

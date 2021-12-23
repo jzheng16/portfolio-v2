@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './Carousel.scss';
 import pic1 from '../../images/bg2.jpg';
-import pic2 from '../../images/Reacto.png';
 import pic3 from '../../images/MFP1.png';
 import pic4 from '../../images/html5.png';
 import pic5 from '../../images/sass.png';
 import pic6 from '../../images/gg-1.jpg';
 import pic7 from '../../images/gg-2.jpg';
 import pic8 from '../../images/gg-3.jpg';
+import typist_1 from '../../images/typist.JPG';
 
 class Carousel extends Component {
   constructor(props) {
@@ -43,9 +43,9 @@ class Carousel extends Component {
 
   render() {
     const gallery = {
-      MyFitnessClone: [pic1, pic2, pic3],
-      QuizNOS: [pic1, pic2, pic5],
-      TypeRacer: [pic1, pic2, pic4],
+      MyFitnessClone: [pic1, pic3],
+      QuizNOS: [pic1, pic5],
+      TypeRacer: [typist_1, pic4],
       'G&G Distributors': [pic6, pic7, pic8]
     };
     const {
