@@ -10,7 +10,6 @@ module.exports = {
     'react/prop-types': 0,
     camelcase: 0,
     'max-len': 0,
-    'class-methods-use-this': 0,
     'react/self-closing-comp': 0,
     'no-console': 0,
     'class-methods-use-this': 1,
@@ -70,7 +69,12 @@ module.exports = {
           'to'
         ]
       }
-    ]
+    ],
+    'react/jsx-props-no-spreading': 0,
+    'react/destructuring-assignment': 0,
+    'no-new': 0,
+    'react/button-has-type': 0,
+    'no-shadow': 0,
   },
   overrides: [
     {

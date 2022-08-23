@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AOS from 'aos';
 import './App.scss';
 import 'aos/dist/aos.css';
+import axios from 'axios';
 import Routes from '../../Routes';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
@@ -23,10 +24,12 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-export default () => (
+const App = () => (
   <div className="App">
     <Navbar />
     <Routes />
     <Footer />
   </div>
 );
+
+export default App;

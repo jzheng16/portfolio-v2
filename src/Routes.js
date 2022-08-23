@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Tutoring from './components/Blogs/Tutoring/Tutoring';
 import Burnout from './components/Blogs/Burnout/Burnout';
+import TipTap from './components/TipTap/TipTap';
+import Slate from './components/Slate/Slate';
 // import Blog from './components/Blog/Blog';
 
 export default function Routes() {
@@ -16,6 +18,9 @@ export default function Routes() {
       </Route>
       <Route exact path="/blog/how-to-avoid-burnout">
         <Burnout />
+      </Route>
+      <Route exact path="/create">
+        <TipTap />
       </Route>
       {/* <Route exact path="/blog">
         <Blog />
